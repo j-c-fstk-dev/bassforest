@@ -4,11 +4,26 @@ import { Instagram, Twitter, Youtube, Music2 } from 'lucide-react';
 const Footer: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.currentTarget);
+    formData.append('form-name', 'newsletter');
+
+    await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData as any).toString(),
+    });
+
+    setSubmitted(true);
+  };
+
   return (
     <footer className="bg-black border-t border-white/10 pt-20 pb-8">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          
+
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
@@ -20,7 +35,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-500 max-w-sm mb-8 leading-relaxed">
               Bass Forest is the first edition of an annual virtual electronic music festival amplifying global tree planting through World Environment Day, aligned with the Monthly Earth Day ecosystem.
             </p>
-            
+
             <div className="flex gap-4">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-gray-400 hover:bg-neon-green hover:text-black transition-all transform hover:-translate-y-1">
                 <Instagram size={24} />
@@ -67,14 +82,9 @@ const Footer: React.FC = () => {
 
             {!submitted ? (
               <form
-                name="newsletter"
-                method="POST"
-                data-netlify="true"
-                onSubmit={() => setSubmitted(true)}
                 className="flex group"
+                onSubmit={handleSubmit}
               >
-                <input type="hidden" name="form-name" value="newsletter" />
-
                 <input
                   type="email"
                   name="email"
@@ -98,6 +108,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
+        {/* Footer bottom */}
         <div className="border-t border-white/5 pt-10 text-center md:text-left flex flex-col md:flex-row justify-between items-center text-gray-600 text-xs">
           <p className="mb-4 md:mb-0 italic">
             © 2026 Bass Forest Festival. Seed by beat, beat by seed.
@@ -112,6 +123,12 @@ const Footer: React.FC = () => {
           Powered by BeRegen ®
         </div>
       </div>
+
+      {/* 🔒 Netlify static form (build-time detection) */}
+      <form name="newsletter" method="POST" data-netlify="true" hidden>
+        <input type="hidden" name="form-name" value="newsletter" />
+        <input type="email" name="email" />
+      </form>
     </footer>
   );
 };
