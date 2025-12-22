@@ -67,6 +67,9 @@ const Footer: React.FC = () => {
             <a href="#terms" className="hover:text-white transition-colors">Terms</a>
           </div>
         </div>
+        <div className="text-center text-xs text-gray-600 pt-8">
+          Powered by BeRegen ®
+        </div>
       </div>
     </footer>
   );
