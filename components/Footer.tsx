@@ -37,10 +37,10 @@ const Footer: React.FC = () => {
             </p>
 
             <div className="flex gap-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-gray-400 hover:bg-neon-green hover:text-black transition-all transform hover:-translate-y-1">
+              <a href="https://www.instagram.com/monthlyearthday?igsh=MXZzbWN0OTVpY290cw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-gray-400 hover:bg-neon-green hover:text-black transition-all transform hover:-translate-y-1">
                 <Instagram size={24} />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-gray-400 hover:bg-neon-green hover:text-black transition-all transform hover:-translate-y-1">
+              <a href="https://x.com/MonthlyEarthDay" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-gray-400 hover:bg-neon-green hover:text-black transition-all transform hover:-translate-y-1">
                 <Twitter size={24} />
               </a>
               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-gray-400 hover:bg-neon-green hover:text-black transition-all transform hover:-translate-y-1">
