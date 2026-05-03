@@ -1,5 +1,4 @@
 import React from 'react';
-import Countdown from './Countdown';
 import TreeCounter from './TreeCounter';
 import { SectionId } from '../types';
 
@@ -33,35 +32,41 @@ const Hero: React.FC = () => {
         {/* Date & Tagline */}
         <div className="flex flex-col md:flex-row items-center gap-4 text-forest-300 font-bold tracking-widest text-sm md:text-xl mb-8">
           <span className="flex items-center gap-2">
-            <span className="w-2 h-2 bg-neon-green rounded-full animate-ping"></span>
             EARTH DAY 2026
           </span>
           <span className="hidden md:inline text-forest-600">•</span>
-          <span>12-24 HR VIRTUAL LIVESTREAM</span>
+          <span>LIVESTREAM</span>
         </div>
 
         <div className="max-w-3xl space-y-6 mb-10">
           <p className="text-lg md:text-2xl text-gray-300 leading-relaxed font-light">
-            The first edition of an annual global electronic music festival amplifying The Global Tree Planting Day through music, community and real-world tree planting.
+            The global broadcast has concluded — watch the full replay and continue supporting the mission.
           </p>
           <p className="text-base md:text-lg text-forest-400 leading-relaxed font-medium">
-          Bass Forest brings together electronic artists and listeners worldwide on April 22 to support the coordinated global tree planting action on July 26, 2026 as part of the largest tree planting day in environmental history, aligned with the <a href="https://monthlyearthday.org/" target="_blank" rel="noopener noreferrer" className="text-neon-green hover:text-emerald-400 transition-colors">Monthly Earth Day</a> ecosystem.
+          Bass Forest brought together artists and audiences worldwide for a global electronic music livestream supporting a coordinated tree planting initiative on Earth Day 2026.
           </p>
         </div>
 
-        {/* CTA */}
-        <button className="group relative px-10 py-5 bg-transparent overflow-hidden rounded-full hover:scale-105 transition-transform duration-300">
-          <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-neon-green to-emerald-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
-          <div className="absolute inset-0 w-full h-full blur-xl bg-neon-green opacity-40 group-hover:opacity-60 transition-opacity"></div>
-          <span className="relative text-forest-950 font-display font-black text-xl md:text-2xl tracking-widest flex items-center gap-2">
-            JOIN THE FOREST
-          </span>
-        </button>
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 mb-8">
+          <a href="#live-stream-section" className="group relative px-8 py-4 bg-gradient-to-r from-neon-green to-emerald-500 overflow-hidden rounded-full hover:scale-105 transition-transform duration-300">
+            <div className="absolute inset-0 w-full h-full blur-xl bg-neon-green opacity-60 group-hover:opacity-80 transition-opacity"></div>
+            <span className="relative text-forest-950 font-display font-black text-lg md:text-xl tracking-widest flex items-center justify-center gap-2">
+              ▶ WATCH REPLAY
+            </span>
+          </a>
+          <a href="https://monthlyearthday.org/" target="_blank" rel="noopener noreferrer" className="group relative px-8 py-4 bg-transparent overflow-hidden rounded-full hover:scale-105 transition-transform duration-300 border border-neon-green/50">
+            <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-neon-green to-emerald-500 opacity-0 group-hover:opacity-20 transition-opacity"></div>
+            <span className="relative text-neon-green font-display font-black text-lg md:text-xl tracking-widest flex items-center justify-center gap-2">
+              🌱 SUPPORT THE MISSION
+            </span>
+          </a>
+        </div>
 
-        {/* Countdown */}
+        {/* Total Impact */}
         <div className="mt-12 w-full">
-          <p className="text-forest-400 text-sm uppercase tracking-[0.3em] mb-4">Countdown to Impact</p>
-          <Countdown />
+          <p className="text-forest-400 text-sm uppercase tracking-[0.3em] mb-4">Total Impact from Earth Day 2026</p>
+          <TreeCounter />
         </div>
 
       </div>

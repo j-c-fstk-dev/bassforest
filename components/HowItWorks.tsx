@@ -6,18 +6,18 @@ const HowItWorks: React.FC = () => {
   const steps = [
     {
       icon: <MonitorPlay className="w-12 h-12 text-neon-blue" />,
-      title: 'Watch & Participate',
-      desc: 'Join the global electronic music livestream on Earth Day (April 22) and participate from anywhere in there world.',
+      title: 'Watch & Experience',
+      desc: 'Watch the full livestream replay and explore the performances from Earth Day.',
     },
     {
       icon: <Sprout className="w-12 h-12 text-neon-green" />,
-      title: 'Donate to Plant',
-      desc: 'Donations collected during the event are routed through the <a href="https://monthlyearthday.org/" target="_blank" rel="noopener noreferrer" className="text-neon-green hover:text-emerald-400 transition-colors">Monthly Earth Day</a> infrastructure and allocated to aligned reforestation organizations.',
+      title: 'Contribute to Planting',
+      desc: 'Donations continue to support verified reforestation efforts through Monthly Earth Day.',
     },
     {
       icon: <Globe2 className="w-12 h-12 text-emerald-400" />,
       title: 'Global Planting Day',
-      desc: 'On July 26, 2026, planting actions take place worldwide as part of a coordinated, decentralized effort.',
+      desc: 'On July 26, 2026, coordinated planting actions will take place worldwide.',
     },
   ];
 
@@ -76,7 +76,7 @@ const HowItWorks: React.FC = () => {
         {/* Broadcast Information */}
         <div className="mt-16 text-center max-w-4xl mx-auto">
           <p className="text-lg text-gray-300 leading-relaxed">
-            Bass Forest will be broadcasted live through Hubcast Media across X, YouTube Live, Bass Forest home page, and many more channels. This is a free event on Earth Day, so get ready to dance with friends from all around the world.
+            Bass Forest was broadcast live through Hubcast Media across X, YouTube Live, Bass Forest home page, and many more channels. Thank you to everyone who joined us for this free event on Earth Day and danced with friends from all around the world.
           </p>
         </div>
       </div>

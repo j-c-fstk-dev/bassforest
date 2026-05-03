@@ -30,6 +30,7 @@ const Lineup: React.FC = () => {
     <section id={SectionId.LINEUP} className="py-24 bg-gradient-to-b from-forest-950 to-forest-900 relative">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center mb-16 text-center">
+          <p className="text-neon-green text-sm uppercase tracking-[0.3em] mb-4">Artists from Earth Day 2026</p>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4 uppercase">THE LINEUP</h2>
           <p className="text-gray-400 max-w-xl text-lg">
             A curated mix of global electronic artists — from underground to mid-tier and established names.

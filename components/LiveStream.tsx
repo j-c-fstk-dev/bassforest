@@ -6,46 +6,23 @@ const LiveStream: React.FC = () => {
       
       {/* VIDEO EMBED */}
       <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-display font-black text-neon-green mb-6 tracking-widest text-center">
-          LIVE STREAM
-        </h2>
+        <p className="text-forest-400 text-sm uppercase tracking-[0.3em] mb-4 text-center">Full Livestream Replay — Earth Day 2026</p>
         <div className="rounded-xl overflow-hidden shadow-[0_0_30px_rgba(57,255,20,0.2)] border border-neon-green/20">
-          <div style={{paddingBottom: '56.25%', position: 'relative', height: 0}}>
+          <div style={{padding: '56.25% 0 0 0', position: 'relative'}}>
             <iframe 
-              src="https://vimeo.com/event/5882370/embed" 
+              src="https://player.vimeo.com/video/1188157126?h=ce985abd64&badge=0&autopause=0&player_id=0&app_id=58479" 
               frameBorder="0" 
-              allow="autoplay; fullscreen; picture-in-picture; encrypted-media; web-share" 
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
               referrerPolicy="strict-origin-when-cross-origin" 
-              allowFullScreen 
               style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}}
+              title="BASS FOREST - EARTH DAY"
             />
           </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
       </div>
 
-      {/* CHAT EMBED */}
-      <div>
-        <h2 className="text-3xl md:text-4xl font-display font-black text-neon-green mb-6 tracking-widest text-center">
-          LIVE CHAT
-        </h2>
-        <div className="rounded-xl overflow-hidden shadow-[0_0_30px_rgba(57,255,20,0.2)] border border-neon-green/20 w-full">
-          <script src="https://minnit.chat/js/embed.js?c=1772345192" defer></script>
-          <span 
-            style={{
-              display: 'block !important',
-              width: '100% !important',
-              height: '600px !important',
-            }} 
-            className="minnit-chat-sembed" 
-            data-chatname="https://organizations.minnit.chat/633716470669231/c/bassforest?embed" 
-            data-style="width:100% !important; height:600px !important; max-height:none !important;"
-            data-version="1.55"
-          >
-            Chat
-          </span>
-        </div>
-      </div>
-
+      
     </div>
   );
 };

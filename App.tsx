@@ -9,6 +9,8 @@ import FAQ from './components/FAQ';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import LiveStream from './components/LiveStream';
+import WhatHappened from './components/WhatHappened';
+import WhatsNext from './components/WhatsNext';
 import ScrollReveal from './components/ScrollReveal';
 import Privacy from './components/Privacy';
 import Terms from './components/Terms';
@@ -48,6 +50,10 @@ function App() {
       <LiveStream />
       
       <ScrollReveal>
+        <WhatHappened />
+      </ScrollReveal>
+      
+      <ScrollReveal>
         <HowItWorks />
       </ScrollReveal>
       
@@ -57,6 +63,10 @@ function App() {
       
       <ScrollReveal>
         <Lineup />
+      </ScrollReveal>
+      
+      <ScrollReveal>
+        <WhatsNext />
       </ScrollReveal>
       
       <ScrollReveal>

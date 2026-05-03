@@ -18,6 +18,9 @@ const DonationCenter: React.FC = () => {
 
           <div className="max-w-3xl mx-auto space-y-6 text-lg leading-relaxed text-gray-400">
             <p className="font-bold text-white">
+              Bass Forest Earth Day 2026 marked the first global activation of this initiative.
+            </p>
+            <p>
               Music as a catalyst for a global planting day.
             </p>
             <p>
@@ -49,7 +52,7 @@ const DonationCenter: React.FC = () => {
             </h4>
 
             <div className="space-y-4 text-gray-400 text-sm leading-relaxed">
-              <p>100% of donations raised for Bass Forest are allocated to verified tree planting partners and organizations. Funds will go directly to the people on the ground doing the work. All trees planted will be verified and uploaded to the Silvi and or Treegens database for tracking and easy accessibility to the public.</p>
+              <p>100% of donations raised for Bass Forest are allocated to verified tree planting partners and organizations. Funds go directly to the people on the ground doing the work. All trees are verified and uploaded to the Silvi and/or Treegens database for public tracking and transparency.</p>
             </div>
           </div>
 
@@ -67,10 +70,10 @@ const DonationCenter: React.FC = () => {
         {/* DONATION CENTER */}
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-12">
 
-          {/* LIVE GOAL BAR */}
+          {/* PLANTING GOAL */}
           <div className="w-full bg-black/40 p-6 rounded-3xl border border-white/10">
             <h4 className="text-forest-400 font-bold uppercase tracking-widest text-sm mb-6 flex items-center gap-2 justify-center">
-              <Trees size={16} /> Live Planting Goal
+              <Trees size={16} /> Planting Goal
             </h4>
 
             <div
@@ -121,27 +124,27 @@ const DonationCenter: React.FC = () => {
 
             <div className="space-y-3 max-w-md">
               <h3 className="text-2xl font-display font-bold text-white">
-                SCAN TO PLANT
+                Continue the Impact
               </h3>
               <p className="text-gray-400">
-                Quickly donate from your mobile device using the stream QR code.
+                Support ongoing reforestation efforts through Monthly Earth Day.
               </p>
               <div className="bg-forest-800/50 p-4 rounded-xl border border-white/10">
                 <p className="text-sm text-forest-300">
-                  Your contribution appears live on the stream during the event!
+                  Your contribution supports verified tree planting initiatives worldwide.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* DONATE BUTTON */}
+          {/* SUPPORT BUTTON */}
           <a
             href="https://gofund.me/9c0b8d38e"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 w-full bg-white text-forest-950 font-display font-black text-xl py-6 rounded-2xl hover:bg-neon-green transition-all transform hover:-translate-y-1 shadow-2xl"
           >
-            DONATE NOW <ExternalLink size={24} />
+            SUPPORT THE MISSION <ExternalLink size={24} />
           </a>
         </div>
       </div>
